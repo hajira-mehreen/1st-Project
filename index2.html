@@ -18,31 +18,38 @@
         }
 
         .container {
-            width: 100vw;
-            height: 100vh;
             background-color: rgb(248, 242, 242);
-            position: relative;
-
+        }
+         .sign-inimg {
+            display:inline-block;
+            width: 49%;
+            height:500px;
+            padding: 35px 25px;
         }
 
-        .rightcontent {
-            position: absolute;
-            right: 0%;
+        .sign-inimg img {
+            width: 100%;
+        }
+
+        .account {
+            padding: 30px;
+            font-size: 12px;
+            color: black;
+            line-height: 10em;
         }
 
         .sign-in {
             background-color: white;
-            width: 50vw;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            height: 78vh;
+            width: 70vw;
+            height: 500px;
             border-radius: 8px;
-            transform: translate(-50%, -50%);
+            margin:3% auto;
         }
 
         .sign-inform {
-            width: 25vw;
+            width: 45%;
+            display:inline-block;
+            height:500px;
             padding: 12px 5px;
         }
 
@@ -65,8 +72,7 @@
             margin-right: 9px;
         }
 
-        label {
-            position: absolute;
+        label{
             font-size: 12px;
         }
 
@@ -123,29 +129,18 @@
             transform: scale(1.09);
         }
 
-        .sign-inimg {
-            width: 20vw;
-            padding: 35px 25px;
-        }
-
-        .sign-inimg img {
-            width: 16vw;
-        }
-
-        .account {
-            padding: 30px;
-            font-size: 12px;
-            color: black;
-            line-height: 10em;
-        }
+       
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="sign-in">
-            <div class="rightcontent">
-                <div class="sign-inform">
+            <div class="sign-inimg">
+                <img src="signin-image.jpg" alt="">
+                <a href="index.html" class="account">Create an account</a>
+            </div>
+            <div class="sign-inform">
                     <h1>Sign in</h1>
                     <form>
                         <div class="frm frm1">
@@ -187,11 +182,6 @@
                     </ul>
                 </div>
             </div>
-            <div class="sign-inimg">
-                <img src="signin-image.jpg" alt="">
-                <a href="index.html" class="account">Create an account</a>
-            </div>
-        </div>
     </div>
 </body>
 
